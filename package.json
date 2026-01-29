@@ -2,7 +2,8 @@
   "name": "didula-mini",
   "version": "1.0.0",
   "description": "didula-mini WhatsApp Bot with Multi-Number Support",
-  "main": "index.js",
+  "main": "index.js",  
+  "type": "module"
   "scripts": {
     "start": "node index.js"
   },
