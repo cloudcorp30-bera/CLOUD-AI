@@ -2,14 +2,14 @@
   "name": "BERA-TECH",
   "version": "10.8.1",
   "description": "BERA-TECH latest multi-device WhatsApp bot",
-  "main": "src/index.js",
+  "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "pm2 start src/index.js --deep-monitoring --attach --name BERA-TECH",
+    "start": "node index.js",
+    "dev": "pm2 start index.js --deep-monitoring --attach --name BERA-TECH",
     "stop": "pm2 stop BERA-TECH",
     "restart": "pm2 restart BERA-TECH",
-    "render-start": "node src/index.js"
+    "render-start": "node index.js"
   },
   "keywords": ["BERA-TECH", "whatsapp-bot", "whatsapp md bot"],
   "author": "BRUCE BERA",
