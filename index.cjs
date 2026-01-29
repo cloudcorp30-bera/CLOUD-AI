@@ -40,9 +40,7 @@ logger.level = "trace";
 
 const msgRetryCounterCache = new NodeCache();
 
-const __filename = __filename;
-const __dirname = path.dirname(__filename);
-
+// __filename and __dirname are automatically available in CommonJS
 const sessionDir = path.join(__dirname, 'session');
 const credsPath = path.join(sessionDir, 'creds.json');
 
@@ -264,7 +262,7 @@ async function init() {
     } else {
         console.log("📝 No existing session file, checking config.SESSION_ID...");
         
-        if (config.SESSION_ID && config.SESSION_ID.startsWith("BERA~")) {
+        if (config.SESSION_ID && config.SESSION_ID.startsWith("Gifted~")) {
             console.log("📥 Attempting to load Gifted session (GZIP compressed)...");
             const sessionLoaded = await loadGiftedSession();
             
